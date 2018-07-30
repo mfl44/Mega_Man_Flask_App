@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="Mike Landron">
+        <title>R.M.C. | Mega Man 6</title>
+        <link rel="stylesheet" href="../static/rmcStyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="sidebar">
+            <a href="/"><img src="../static/buttons/side-home-button.png"></a>
+            <a href="#"><img src="../static/buttons/side-about-button.png"></a>
+            <a href="#"><img src="../static/buttons/side-help-button.png"></a>
+            <a href="mailto:#"><img src="../static/buttons/side-contact-button.png"></a>
+        </div>
+        <div id="content">
+            <header>
+                <img src="../static/buttons/menu-button1.png" alt="MENU" onclick="ToggleSidebar()">
+                <a href="/"><img src="../static/buttons/home-button.png" alt ="HOME"></a>
+                <a href="#"><img src="../static/buttons/help-button.png" alt ="HELP"></a>
+                <div class="head-nav">
+                    <img src="../static/buttons/beat.png" alt="Navigation">
+                </div>
+            </header>
+            <div class="banner" id="home-banner">
+                <img src="../static/misc/home-banner.png">
+            </div>
+            <div class="instruction-pane">
+                <p>
+                    <strong><i><u>INSTRUCTIONS:</u></i></strong> 
+                    Click on any of the robot masters to see their profile
+                </p>
+            </div>
+            <div class="art-container">
+                <img class="box-art active" src="../static/boxart/mm6.png">
+                <div class="profile-container" id="blizzard-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Blizzard Man</h1>
+                            <h1 class="series-number">DWN-041</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">3 (3 on Roll)</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Blizzard Attack</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="centaur-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Centaur Man</h1>
+                            <h1 class="series-number">DWN-041</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">4</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Centaur Flash (Shots)</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">3 (2)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="flame-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Flame Man</h1>
+                            <h1 class="series-number">DWN-042</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">4</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Flame Blast (Fireballs)</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">4 (3)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="knight-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Knight Man</h1>
+                            <h1 class="series-number">DWN-043</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">4</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Knight Crusher</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">5</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="plant-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Plant Man</h1>
+                            <h1 class="series-number">DWN-045</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">4</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Plant Barrier</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="tomahawk-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Tomahawk Man</h1>
+                            <h1 class="series-number">DWN-046</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">4</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Silver Tomahawk (Feathers)</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">5 (4)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="wind-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Wind Man</h1>
+                            <h1 class="series-number">DWN-047</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">5</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Wind Storm</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="yamato-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Yamato Man</h1>
+                            <h1 class="series-number">DWN-048</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">4</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Yamato Spear (Shots)</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">4 (4)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sprite-tile-container">
+                <div class="sprite-tile" id="blizzard-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/blizzard-man.png">
+                    </div>
+                </div>
+                <div class="sprite-tile" id="centaur-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/centaur-man.png">
+                    </div>
+                </div>
+                <div class="sprite-tile" id="flame-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/flame-man.png">
+                    </div>
+                </div>
+                <div class="sprite-tile" id="knight-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/knight-man.png">
+                    </div> 
+                </div>
+                <div class="sprite-tile" id="plant-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/plant-man.png">
+                    </div>
+                </div>
+                <div class="sprite-tile" id="tomahawk-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/tomahawk-man.png">
+                    </div>
+                </div>
+                <div class="sprite-tile" id="wind-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/wind-man.png">
+                    </div>
+                </div>
+                <div class="sprite-tile" id="yamato-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/yamato-man.png">
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <a href=# id="policy">Privacy &amp; Cookie Policy</a>
+            </footer>
+            <script src="../static/rmc.custom.js"></script>
+        </div>
+    </body>
+</html>

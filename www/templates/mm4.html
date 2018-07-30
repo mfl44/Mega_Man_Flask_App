@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="Mike Landron">
+        <title>R.M.C. | Mega Man 4</title>
+        <link rel="stylesheet" href="../static/rmcStyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="sidebar">
+            <a href="/"><img src="../static/buttons/side-home-button.png"></a>
+            <a href="#"><img src="../static/buttons/side-about-button.png"></a>
+            <a href="#"><img src="../static/buttons/side-help-button.png"></a>
+            <a href="mailto:#"><img src="../static/buttons/side-contact-button.png"></a>
+        </div>
+        <div id="content">
+            <header>
+                <img src="../static/buttons/menu-button1.png" alt="MENU" onclick="ToggleSidebar()">
+                <a href="/"><img src="../static/buttons/home-button.png" alt ="HOME"></a>
+                <a href="#"><img src="../static/buttons/help-button.png" alt ="HELP"></a>
+                <div class="head-nav">
+                    <img src="../static/buttons/beat.png" alt="Navigation">
+                </div>
+            </header>
+            <div class="banner" id="home-banner">
+                <img src="../static/misc/home-banner.png">
+            </div>
+            <div class="instruction-pane">
+                <p>
+                    <strong><i><u>INSTRUCTIONS:</u></i></strong> 
+                    Click on any of the robot masters to see their profile
+                </p>
+            </div>
+            <div class="art-container">
+                <img class="box-art active" src="../static/boxart/mm4.png">
+                <div class="profile-container" id="bright-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Bright Man</h1>
+                            <h1 class="series-number">DCN-025</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">8</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Body Slam (Shots)</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">8 (4)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="toad-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Toad Man</h1>
+                            <h1 class="series-number">DCN-026</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">8</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Rain Flush</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">8</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="drill-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Drill Man</h1>
+                            <h1 class="series-number">DCN-027</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">8</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Drill Bomb (Explosion)</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">3 (2)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="pharaoh-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Pharaoh Man</h1>
+                            <h1 class="series-number">DCN-028</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">4</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Pharaoh Wave (Shots)</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">6 (2)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="ring-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Ring Man</h1>
+                            <h1 class="series-number">DCN-029</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">8</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Ring Boomerang</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="dust-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Dust Man</h1>
+                            <h1 class="series-number">DCN-030</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">8</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Dust Crusher (Shrapnel)</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">4 (4)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="dive-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Dive Man</h1>
+                            <h1 class="series-number">DCN-031</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">8</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Torpedo Spin (Missiles)</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">8 (4)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="skull-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Skull Man</h1>
+                            <h1 class="series-number">DCN-032</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">8</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Skull Barrier (Shots)</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">0 (4)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sprite-tile-container">
+                <div class="sprite-tile" id="bright-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/bright-man.png">
+                    </div>
+                </div>
+                <div class="sprite-tile" id="toad-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/toad-man.png">
+                    </div>
+                </div>
+                <div class="sprite-tile" id="drill-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/drill-man.png">
+                    </div>
+                </div>
+                <div class="sprite-tile" id="pharaoh-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/pharoah-man.png">
+                    </div> 
+                </div>
+                <div class="sprite-tile" id="ring-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/ring-man.png">
+                    </div>
+                </div>
+                <div class="sprite-tile" id="dust-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/dust-man.png">
+                    </div>
+                </div>
+                <div class="sprite-tile" id="dive-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/dive-man.png">
+                    </div>
+                </div>
+                <div class="sprite-tile" id="skull-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/skull-man.png">
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <a href=# id="policy">Privacy &amp; Cookie Policy</a>
+            </footer>
+            <script src="../static/rmc.custom.js"></script>
+        </div>
+    </body>
+</html>

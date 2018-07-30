@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="Mike Landron">
+        <title>R.M.C. | Mega Man</title>
+        <link rel="stylesheet" href="../static/rmcStyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="sidebar">
+            <a href="/"><img src="../static/buttons/side-home-button.png"></a>
+            <a href="#"><img src="../static/buttons/side-about-button.png"></a>
+            <a href="#"><img src="../static/buttons/side-help-button.png"></a>
+            <a href="mailto:#"><img src="../static/buttons/side-contact-button.png"></a>
+        </div>
+        <div id="content">
+            <header>
+                <img src="../static/buttons/menu-button1.png" alt="MENU" onclick="ToggleSidebar()">
+                <a href="/"><img src="../static/buttons/home-button.png" alt ="HOME"></a>
+                <a href="#"><img src="../static/buttons/help-button.png" alt ="HELP"></a>
+                <div class="head-nav">
+                    <img src="../static/buttons/beat.png" alt="Navigation">
+                </div>
+            </header>
+            <div class="banner" id="home-banner">
+                <img src="../static/misc/home-banner.png">
+            </div>
+            <div class="instruction-pane">
+                <p>
+                    <strong><i><u>INSTRUCTIONS:</u></i></strong> 
+                    Click on any of the robot masters to see their profile
+                </p>
+            </div>
+            <div class="art-container">
+                <img class="box-art active" src="../static/boxart/mm1.png">
+                <div class="profile-container" id="cut-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Cut Man</h1>
+                            <h1 class="series-number">DLN-003</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">4</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Rolling Cutter</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="guts-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Guts Man</h1>
+                            <h1 class="series-number">DLN-004</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">4</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Super Arm</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="ice-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Ice Man</h1>
+                            <h1 class="series-number">DLN-005</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">5</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Ice Slasher</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="bomb-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Bomb Man</h1>
+                            <h1 class="series-number">DLN-006</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">4</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Hyper Bomb</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="fire-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Fire Man</h1>
+                            <h1 class="series-number">DLN-007</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">4</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Fire Wave</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="elec-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Elec Man</h1>
+                            <h1 class="series-number">DLN-008</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">4</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Thunder Beam</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">10</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sprite-tile-container">
+                <div class="sprite-tile" id="cut-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/cut-man.png">
+                    </div>
+                </div>
+                <div class="sprite-tile" id="guts-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/guts-man.png">
+                    </div>
+                </div>
+                <div class="sprite-tile" id="ice-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/ice-man.png">
+                    </div>
+                </div>
+                <div class="sprite-tile" id="bomb-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/bomb-man.png">
+                    </div> 
+                </div>
+                <div class="sprite-tile" id="fire-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/fire-man.png">
+                    </div>
+                </div>
+                <div class="sprite-tile" id="elec-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/elec-man.png">
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <a href=# id="policy">Privacy &amp; Cookie Policy</a>
+            </footer>
+            <script src="../static/rmc.custom.js"></script>
+        </div>
+    </body>
+</html>

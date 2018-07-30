@@ -1,0 +1,314 @@
+/*Global*/
+html {
+    height: 100%;
+    width: 100%
+}
+
+body, #content {
+    min-height: 100%;
+    background-color: #313036;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+
+body {
+    width: 100%;
+}
+
+#content {
+    max-width: 100%;
+}
+
+#sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #313036;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#sidebar a {
+    padding: 5px 0 5px 0;
+    text-decoration: none;
+    font: 20px Verdana, sans-serif;
+    color: white;
+    display: block;
+    transition: 0.5s;
+}
+
+#sidebar a img {
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    height: 50px;
+    margin: 0;
+    padding: 15px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+header img {
+    height: 100%;
+    float: left;
+    padding: 0 15px 0 0;
+    cursor: pointer;
+}
+
+header .head-nav {
+    height: 100%;
+    float: right;
+    overflow: hidden;
+}
+
+header .head-nav img {
+    height: 100%;
+    padding: 0 0 0 15px;
+    cursor: default;
+}
+
+.banner {
+    min-width: 100%;
+    height: 150px;
+    margin: 0;
+    padding: 0 0 15px 0;
+    background: #313036;
+    line-height: 150px;
+}
+
+.banner img {
+    max-height: 100%;
+    max-width: 90%;
+    background: #313036;
+    vertical-align: middle;
+}
+
+.instruction-pane {
+    min-width: 100%;
+    height: 50px;
+    margin:0;
+    padding: 0;
+    background: #0070ec;
+    display: table;
+}
+
+.instruction-pane p {
+    color: #ffffff;
+    font: 15px Verdana, sans-serif;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+footer {
+    min-width: 100%;
+    height: 20px;
+    margin: 0;
+    padding-bottom: 5px;
+    background: #313036;
+}
+
+footer a {
+    color: #ffffff;
+    font: 10px Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+/*Styling for home screen*/
+.game-tile-container {
+    height: 100%;
+    margin: 0;
+    padding: 15px;
+    background: #36dfeb;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.game-tile-container a, .game-tile {
+    max-width: 250px;
+    margin:10px;
+    color: #36dfeb;
+    cursor: default;
+}
+
+.game-tile-container .game-tile {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.game-tile-container .game-tile:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+    transition: 1s;
+}
+
+/*Styling for individual game pages*/
+.art-container{
+    height: 700px;
+    width: 30%;
+    margin:0;
+    position: relative;
+    background: #36dfeb;
+    float: left;
+}
+
+.art-container .box-art {
+    width: 0;
+    max-height: 0;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+.art-container .box-art.active {
+    width: 100%;
+    max-height: 100%;
+}
+
+.art-container .profile-container {
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+    position: absolute;
+    background-color: #ffffff;
+    border-right: #0070ec 5px solid;
+}
+
+.art-container .profile-container.active {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transition: 0.5s;
+}
+
+.art-container .profile-container .profile-info {
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    position: absolute;
+    text-align: left;
+}
+
+.art-container .profile-container.active .profile-info {
+    height: 50%;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.art-container .profile-container.active .profile-info .profile-name {
+    position: relative;
+    width: 100%;
+    display: table;
+    background: #0070ec;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font: 1vw Verdana, sans-serif;
+}
+
+.art-container .profile-container.active .profile-info .profile-name .robot-master {
+    padding: 5px 0 0 10px;
+    margin: 0;
+    float: left;
+    display: table-cell;
+}
+
+.art-container .profile-container.active .profile-info .profile-name .series-number {
+    padding: 5px 0 0 10px;
+    margin: 0;
+    float: right;
+    display: table-cell;
+}
+
+.art-container .profile-container.active .profile-info .stats {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin:0;
+    text-align: center;
+    background: rgba(255,255,255,0.75);
+    color: #313036;
+    overflow: hidden;
+}
+
+.art-container .profile-container.active .profile-info .stats h3 {
+    font: 1.5vw Verdana, sans-serif;
+    text-decoration: bold;
+    padding: 5px 0 0 10px;
+    margin: 0;
+}
+
+.art-container .profile-container.active .profile-info .stats p {
+    font: 1vw Verdana, sans-serif;
+    padding: 5px 0 0 10px;
+    margin: 0;
+}
+
+.sprite-tile-container {
+    height: 700px;
+    width: 70%;
+    margin:0;
+    padding: 0;
+    background: #36dfeb;
+    float: right;
+    position: relative;
+}
+
+.sprite-tile-container .sprite-tile {
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.sprite-tile-container .sprite-tile:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+    transition: 1s;
+}
+
+.sprite-tile-container .sprite-tile .sprite-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.sprite-tile-container .sprite-tile .sprite-container .sprite-frame {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.sprite-tile-container .sprite-tile .sprite-container .sprite {
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="Mike Landron">
+        <title>R.M.C. | Mega Man 5</title>
+        <link rel="stylesheet" href="../static/rmcStyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="sidebar">
+            <a href="/"><img src="../static/buttons/side-home-button.png"></a>
+            <a href="#"><img src="../static/buttons/side-about-button.png"></a>
+            <a href="#"><img src="../static/buttons/side-help-button.png"></a>
+            <a href="mailto:#"><img src="../static/buttons/side-contact-button.png"></a>
+        </div>
+        <div id="content">
+            <header>
+                <img src="../static/buttons/menu-button1.png" alt="MENU" onclick="ToggleSidebar()">
+                <a href="/"><img src="../static/buttons/home-button.png" alt ="HOME"></a>
+                <a href="#"><img src="../static/buttons/help-button.png" alt ="HELP"></a>
+                <div class="head-nav">
+                    <img src="../static/buttons/beat.png" alt="Navigation">
+                </div>
+            </header>
+            <div class="banner" id="home-banner">
+                <img src="../static/misc/home-banner.png">
+            </div>
+            <div class="instruction-pane">
+                <p>
+                    <strong><i><u>INSTRUCTIONS:</u></i></strong> 
+                    Click on any of the robot masters to see their profile
+                </p>
+            </div>
+            <div class="art-container">
+                <img class="box-art active" src="../static/boxart/mm5.png">
+                <div class="profile-container" id="gravity-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Gravity Man</h1>
+                            <h1 class="series-number">DWN-033</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">5</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Gravity Hold (Shots)</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">0 (4)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="wave-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Wave Man</h1>
+                            <h1 class="series-number">DWN-034</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">5</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Water Wave (Harpoon)</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">3 (4)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="stone-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Stone Man</h1>
+                            <h1 class="series-number">DWN-035</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">6</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Power Stone</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="gyro-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Gyro Man</h1>
+                            <h1 class="series-number">DWN-036</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">5</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Gyro Attack</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">6</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="star-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Star Man</h1>
+                            <h1 class="series-number">DWN-037</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">5</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Star Crash</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="charge-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Charge Man</h1>
+                            <h1 class="series-number">DWN-038</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">5</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Charge Kick (Coal)</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">5 (4)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="napalm-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Napalm Man</h1>
+                            <h1 class="series-number">DWN-039</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">5</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Napalm Bomb (Missiles)</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">4 (5)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container" id="crystal-man">
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <h1 class="robot-master">Crystal Man</h1>
+                            <h1 class="series-number">DWN-040</h1>
+                        </div>
+                        <div class="stats">
+                            <h3>HP:</h3>
+                            <p class="hp">28</p>
+                            <h3>Contact Damage:</h3>
+                            <p class="cd">5</p>
+                            <h3>Main Attack(s):</h3>
+                            <p class="ma">Crystal Eye (Shots)</p>
+                            <h3>Damage:</h3>
+                            <p class="ma-damage">3 (4)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sprite-tile-container">
+                <div class="sprite-tile" id="gravity-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/gravity-man.png">
+                    </div>
+                </div>
+                <div class="sprite-tile" id="wave-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/wave-man.png">
+                    </div>
+                </div>
+                <div class="sprite-tile" id="stone-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/stone-man.png">
+                    </div>
+                </div>
+                <div class="sprite-tile" id="gyro-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/gyro-man.png">
+                    </div> 
+                </div>
+                <div class="sprite-tile" id="star-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/star-man.png">
+                    </div>
+                </div>
+                <div class="sprite-tile" id="charge-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/charge-man.png">
+                    </div>
+                </div>
+                <div class="sprite-tile" id="napalm-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/napalm-man.png">
+                    </div>
+                </div>
+                <div class="sprite-tile" id="crystal-man" onclick="toggleProfile(this)">
+                    <div class="sprite-container">
+                        <img class="sprite-frame" src="../static/misc/sprite-frame.png">
+                        <img class="sprite" src= "../static/sprites/crystal-man.png">
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <a href=# id="policy">Privacy &amp; Cookie Policy</a>
+            </footer>
+            <script src="../static/rmc.custom.js"></script>
+        </div>
+    </body>
+</html>
